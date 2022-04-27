@@ -23,7 +23,7 @@ struct patient
 };
 
 
-void addSymptom(patient*& head); 
+void addSymptom(patient*& head); //
 void changeTime(patient*& head); 
 void deletepatient(patient*& head); 
 void saveToFile(patient*& head); 
