@@ -33,7 +33,7 @@ void endProgram(patient*& head); // function to end program
 
 int main() 
 {
-    patient* head = NULL; 
+    patient* head = NULL; // creating head for linked list 
     int choice;
     do // do loop starts 
     {
