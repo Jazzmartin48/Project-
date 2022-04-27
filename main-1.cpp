@@ -33,6 +33,8 @@ void endProgram(patient*& head); // function to end program
 
 int main() // main function starts 
 {
+    cout << "Hello, Welcome to Allcare Mobile App" << endl;
+    cout << "Please press the number dealing with your concerns" << endl;
     patient* head = NULL; // creating head for linked list 
     int choice;
     do // do loop starts 
