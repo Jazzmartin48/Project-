@@ -65,7 +65,7 @@ int main() // main function starts
             endProgram(head);
             break;
         default: 
-            cout << "Invalid choice" << endl; //deafault 
+            cout << "Invalid choice" << endl; //default 
             break;
         }
     } while (choice != 6); 
@@ -84,7 +84,7 @@ void addSymptom(patient*& head)
     cin >> newpatient->symptoms;
     getline (cin >> ws, newpatient->symptoms); // Obtains whitespace characters
     newpatient->next = head; 
-    head = newpatient;
+    head = newpatient; // The head become newpatient
 }
 
 
@@ -97,7 +97,7 @@ void changeTime(patient*& head)
     cout << "Enter patient new time: ";
     cin >> time;
     patient* current = head; 
-    while (current != NULL) 
+    while (current != NULL) // Statement to look for patient
     {
         if (current->name == name) 
         {
