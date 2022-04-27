@@ -14,7 +14,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 using namespace std;
 
 
-struct patient 
+struct patient // struture for the patients 
 {
     string name;
     string time;
@@ -23,19 +23,19 @@ struct patient
 };
 
 
-void addSymptom(patient*& head); //
-void changeTime(patient*& head); 
-void deletepatient(patient*& head); 
-void saveToFile(patient*& head); 
-void printFile(patient*& head); 
-void endProgram(patient*& head); 
+void addSymptom(patient*& head); // function for adding symptoms 
+void changeTime(patient*& head); // function for changing time 
+void deletepatient(patient*& head); // function for deleting patients 
+void saveToFile(patient*& head); // function to save patient information to file and can be used to search 
+void printFile(patient*& head); // function to print file 
+void endProgram(patient*& head); // function to end program 
 
 
 int main() 
 {
     patient* head = NULL; 
     int choice;
-    do 
+    do // do loop starts 
     {
         cout << "Press 1 to Add Symptom/Symptoms" << endl;
         cout << "Press 2 to Change appointment time" << endl;
@@ -44,7 +44,7 @@ int main()
         cout << "Press 5 to Print out file" << endl;
         cout << "Press 6 to end program" << endl;
         cin >> choice;
-        switch (choice) 
+        switch (choice) // switch starts 
         {
         case 1: 
             addSymptom(head);
@@ -65,11 +65,11 @@ int main()
             endProgram(head);
             break;
         default: 
-            cout << "Invalid choice" << endl;
+            cout << "Invalid choice" << endl; //deafault 
             break;
         }
     } while (choice != 6); 
-    return 0; 
+    return 0; // end of the main function 
 }
 
 
@@ -82,7 +82,7 @@ void addSymptom(patient*& head)
     cin >> newpatient->time;
     cout << "Enter patient symptoms: ";
     cin >> newpatient->symptoms;
-    getline (cin >> ws, newpatient->symptoms);
+    getline (cin >> ws, newpatient->symptoms); // Obtains whitespace characters
     newpatient->next = head; 
     head = newpatient;
 }
@@ -143,8 +143,8 @@ void deletepatient(patient*& head)
 
 void saveToFile(patient*& head)
 {
-    ofstream outFile;
-    outFile.open("patient.txt"); 
+    ofstream outFile; // can be used to search for patient information 
+    outFile.open("patient.txt"); // opening file 
     patient* current = head;
     while (current != NULL)
     {
@@ -153,7 +153,7 @@ void saveToFile(patient*& head)
         outFile << current->symptoms << endl;
         current = current->next;
     }
-    outFile.close(); 
+    outFile.close(); // closing file 
 }
 
 
@@ -164,7 +164,7 @@ void printFile(patient*& head)
     string name;
     string time;
     string symptoms;
-    while (inFile >> name >> time >> symptoms) 
+    while (inFile >> name >> time >> symptoms) // not empty. do while loop 
     {
         cout << name << endl;
         cout << time << endl;
@@ -174,18 +174,18 @@ void printFile(patient*& head)
 }
 
 
-void endProgram(patient*& head) 
+void endProgram(patient*& head) // function for ending the program 
 {
-    patient* current = head; 
+    patient* current = head; // creating a current node
     while (current != NULL)
     {
         patient* temp = current;
-        current = current->next;      
+        current = current->next; // moving to next node      
         delete temp;
     }
     cout << "Program ended" << endl; 
 }
- void swapNodes(patient * &p1, patient * &p2)
+ void swapNodes(patient * &p1, patient * &p2) // function to swap nodes 
   {
         string name,time,symptoms;
         name = p1->name;
@@ -200,7 +200,7 @@ void endProgram(patient*& head)
 
     }
 
-void sortLinkedList(patient*& head)
+void sortLinkedList(patient*& head) // arranges list by appointment time 
 {
     patient* current = head;
 
@@ -210,7 +210,7 @@ void sortLinkedList(patient*& head)
         patient* second = current->next;
         while (second != NULL)
         {
-            if (minNode->time > second->time)
+            if (minNode->time > second->time) // links to time 
             {
                 minNode = second;
             }
