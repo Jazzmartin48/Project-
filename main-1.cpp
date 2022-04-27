@@ -31,7 +31,7 @@ void printFile(patient*& head); // function to print file
 void endProgram(patient*& head); // function to end program 
 
 
-int main() 
+int main() // main function starts 
 {
     patient* head = NULL; // creating head for linked list 
     int choice;
