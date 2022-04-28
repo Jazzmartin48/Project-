@@ -9,3 +9,16 @@ The Data Structures used include a linked list and a do while loop.  The program
 
 
 
+Functionality:
+
+<img width="367" alt="Do While Loop Function" src="https://user-images.githubusercontent.com/97749578/165581213-77a9dacf-bdc8-4b1b-8e19-8535bc4bd99b.PNG">
+
+<img width="561" alt="Insert Function" src="https://user-images.githubusercontent.com/97749578/165581289-40c83871-9ca6-43a0-865e-e546cca91846.PNG">
+
+<img width="352" alt="save to file" src="https://user-images.githubusercontent.com/97749578/165581347-2caae1ce-a45c-4287-93ca-ef7ed93c9f1c.PNG">
+
+<img width="476" alt="change time" src="https://user-images.githubusercontent.com/97749578/165581404-ce204e61-c12d-4037-9694-bb6237681890.PNG">
+
+<img width="405" alt="delete" src="https://user-images.githubusercontent.com/97749578/165581438-ab2fbad4-b5b5-4ddd-8d3a-ba22a90175df.PNG">
+
+<img width="312" alt="print function" src="https://user-images.githubusercontent.com/97749578/165581488-529eb8f7-37cb-4735-b49f-7ac286d7672f.PNG">
