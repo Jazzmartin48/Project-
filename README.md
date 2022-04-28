@@ -7,11 +7,7 @@ We used two data sets to derive the information for our program. Our program nee
 
 The Data Structures used include a linked list and a do while loop.  The program will provide the user with a menu of options that they are looking for pertaining to their account or desires. If a user desires to add a symptom, they will be prompted to provide their name, appointment time, and then allowed the option to add their symptoms. Users also can save and delete their files whenever they desire. The program also offered the capabilities of changing appointment times. These functions can be achieved by simply pressing the number corresponding to the function the user selects.
 
-#Overview:
-1. Mission Statement 
-2. 
 
-#Functionality:
 
 <img width="367" alt="Do While Loop Function" src="https://user-images.githubusercontent.com/97749578/165581213-77a9dacf-bdc8-4b1b-8e19-8535bc4bd99b.PNG">
 
